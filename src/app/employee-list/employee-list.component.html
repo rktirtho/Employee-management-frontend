@@ -1,1 +1,20 @@
-<p>employee-list works!</p>
+<h2 class="text-center py-3">Employee List</h2>
+<div class="container">
+    <table class="table table-strip">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.firstName }}</td>
+                <td>{{ employee.lastName }}</td>
+                <td>{{ employee.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
